@@ -335,7 +335,7 @@ import QuartzCore
     upperLabel.fontSize = labelFontSize
     
     lowerLabel.string = getLabelText(forValue: lowerValue)
-    upperLabel.string = upperValue < 65 ? getLabelText(forValue: upperValue) : "65+"
+    upperLabel.string = upperValue == 65 ? getLabelText(forValue: upperValue) : "65+"
     
     lowerLabel.foregroundColor = labelColor.cgColor
     upperLabel.foregroundColor = labelColor.cgColor
