@@ -179,14 +179,14 @@ import QuartzCore
   var previousLocation = CGPoint()
   var previouslySelectedKnob = Knob.Neither
   
-  var lowerLabelTextSize: CGSize!
-  var upperLabelTextSize: CGSize!
+  public var lowerLabelTextSize: CGSize!
+  public var upperLabelTextSize: CGSize!
   
   let track = RangeSliderTrack()
   let lowerKnob = RangeSliderKnob()
   let upperKnob = RangeSliderKnob()
-  let lowerLabel = CATextLayer()
-  let upperLabel = CATextLayer()
+  public let lowerLabel = CATextLayer()
+  public let upperLabel = CATextLayer()
   
   var TrackThickness: CGFloat {
     get {
